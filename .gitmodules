@@ -1,0 +1,6 @@
+[submodule "front"]
+	path = front
+	url = git@github.com:PhilLeGoff/front-tripexplorer.git
+[submodule "back"]
+	path = back
+	url = git@github.com:PhilLeGoff/back-tripexplorer.git
