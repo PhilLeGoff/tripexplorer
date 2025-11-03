@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Django
+*.log
+db.sqlite3
+db.sqlite3-journal
+*.pot
+*.pyc
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+*.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Next.js
+**/.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Build outputs
+/build
+/dist
+
+# Media files (videos, large images)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+ma_video.mp4
+
+# Documentation personnelle (à supprimer ou garder selon besoin)
+PRESENTATION.md
+PRESENTATION.txt
+MISSING_FEATURES_ANALYSIS.md
+ENV_VARIABLES.md
+
+# Anciens dossiers (si inutiles)
+backend/
+frontend/
+
