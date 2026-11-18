@@ -1,43 +1,46 @@
-TripExplorer – Monorepo (root)
+![TripExplorer — Explore places and turn discoveries into a trip.](assets/banner.svg)
 
-Ce dépôt contient deux projets:
-- backend/ (Django + DRF + MongoEngine)
-- frontend/ (Next.js + TypeScript)
+[Français](docs/CASE_STUDY.fr.md) · [Philippe Le Goff](https://github.com/PhilLeGoff) · [Portfolio](https://www.webbyphil.net/)
 
-Prérequis
-- Node.js 18+
-- Python 3.11+
-- MongoDB 6+
-- Yarn (ou npm) et un shell POSIX
+# TripExplorer
 
-Démarrage rapide
-1) Backend
-   - Voir backend/README.md pour l’installation et le lancement de l’API.
-2) Frontend
-   - Voir frontend/README.md pour l’application web.
+A travel-planning application connecting place discovery, saved trips, attraction details and route planning. The React frontend and Django API are now available together in one checkout.
 
-Variables d’environnement (résumé)
-- Frontend
-  - MAPS_PLATFORM_API_KEY (exposé comme NEXT_PUBLIC_GOOGLE_MAPS_API_KEY)
-- Backend
-  - GOOGLE_PLACES_API_KEY
+**React · Next.js · TypeScript · Django REST Framework · MongoDB · Google Maps**
 
-Architecture (haut niveau)
-- Django/DRF (API REST) + MongoEngine (Attraction, Compilation, User)
-- Next.js (Search, Attraction, Trips). Google Maps/Directions/Photos côté front.
+![Real TripExplorer interface; see the screenshot context below](assets/interface.png)
 
-Développement
-- Lancer les deux services en parallèle dans deux terminaux:
-  - API: cd backend && make run (ou instructions du README backend)
-  - Web: cd frontend && yarn dev
+*Screenshot context: real application interface rendered locally with synthetic fixtures. The image does not establish live backend or production usage.*
 
-Git – organisation des dépôts
-- Si vous souhaitez publier le sous-dossier frontend dans un dépôt distant séparé, utilisez git subtree:
-  - git remote add frontend <URL_REMOTE_FRONTEND>
-  - git subtree push --prefix frontend frontend main
-  - Répéter la commande pour pousser les mises à jour ultérieures.
+## What it does
 
-License
-- Usage académique / démonstration.
+- Discover attractions through search and map-oriented views.
+- Inspect attraction details and save places into trip compilations.
+- Use Google Maps/Directions integrations for route planning.
+- Connect account and trip workflows to a Django REST API backed by MongoDB.
 
+## Architecture
 
+```mermaid
+flowchart LR
+  UI[Next.js React frontend] --> API[Django REST API]
+  UI --> Maps[Google Maps and Directions]
+  API --> Places[Google Places]
+  API --> DB[MongoDB via MongoEngine]
+```
+
+## My contribution
+
+I developed this academic full-stack application. This presentation brings its frontend and backend together as normal directories, retaining the original project history and recording the imported component revisions. It removes the need to discover and clone separate repositories before inspecting the product.
+
+## Running and inspecting the project
+
+Use the preserved frontend Yarn lockfile and backend Python requirements. See [setup](docs/SETUP.md). Google browser keys are intentionally client-visible and need API/domain restrictions; server keys stay on the backend. The screenshot uses a local interface fixture and does not demonstrate live Google results.
+
+## Current state and limitations
+
+Academic prototype. Live map/search features require configured Google API credentials and a running MongoDB-backed API. Development authentication and authorization need review before public deployment. No live service or production traffic is claimed.
+
+## Credits
+
+See [component provenance](docs/PROVENANCE.md). Existing third-party notices remain in their source files.

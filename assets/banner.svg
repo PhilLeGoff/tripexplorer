@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 300" role="img" aria-labelledby="title desc">
+<title id="title">TripExplorer</title><desc id="desc">Explore places and turn discoveries into a trip.</desc>
+<rect width="1280" height="300" rx="16" fill="#151719"/>
+<rect x="48" y="54" width="44" height="5" fill="#EAB66A"/>
+<text x="48" y="140" fill="#F5F2EC" font-family="Arial, Helvetica, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">TripExplorer</text>
+<text x="50" y="196" fill="#C5C5C0" font-family="Arial, Helvetica, sans-serif" font-size="27">Explore places and turn discoveries into a trip.</text>
+<text x="50" y="257" fill="#EAB66A" font-family="Arial, Helvetica, sans-serif" font-size="17" letter-spacing="2">PHILIPPE LE GOFF</text>
+</svg>

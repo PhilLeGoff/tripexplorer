@@ -61,6 +61,5 @@ MISSING_FEATURES_ANALYSIS.md
 ENV_VARIABLES.md
 
 # Anciens dossiers (si inutiles)
-backend/
-frontend/
+# Frontend and backend are ordinary tracked monorepo components.
 
